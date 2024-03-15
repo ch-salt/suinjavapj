@@ -1,6 +1,5 @@
 package com.site.suinpj.config;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.WebSocketHandler;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
@@ -12,7 +11,7 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 public class WebSockConf implements WebSocketConfigurer {
     private final WebSocketHandler webSocketHandler;
     
- // 생성자를 추가하여 webSocketHandler를 초기화
+    // 생성자를 추가하여 webSocketHandler를 초기화
     public WebSockConf(WebSocketHandler webSocketHandler) {
         this.webSocketHandler = webSocketHandler;
     }
